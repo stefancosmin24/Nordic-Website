@@ -428,12 +428,15 @@ p {
     text-transform: uppercase;
 }
 
-.info{
-    display:flex;
+.info {
+    display: flex;
     flex-wrap: wrap;
+    gap: 40px;
+    margin: 0px;
+    padding: 6% 12%;
 }
 
-.info .title h2{
+.info .title h2 {
     color: var(--primary-navy-dark, #072048);
 
     /* Heading Content / 38 / Superbold */
@@ -441,67 +444,92 @@ p {
     font-size: 38px;
     font-style: normal;
     font-weight: 700;
-    line-height: 45px; /* 118.421% */
+    line-height: 45px;
+    margin: 0px;
+    /* 118.421% */
 }
 
-.info .title p{
+.info .title p {
     color: var(--primary-navy-dark, #072048);
     font-family: Hind Madurai;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 0px;
 }
 
-.data{
-    display:inline-flex;
+.data {
+    display: inline-flex;
+    margin: 0px;
+    gap: 40px;
 }
 
 
 
-.contact{
-    display:grid;
-    grid-template-columns:  repeat(2, minmax(0, 1fr));
-
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0px;
+    grid-gap: 80px;
 }
 
-.contact h1{
+.contact h1 {
     color: var(--primary-navy-dark, #072048);
     font-family: Hind Madurai;
     font-size: 21px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin: 0px;
 }
 
-.contact h2{
+.contact h2 {
     color: var(--primary-navy-dark, #072048);
     font-family: Hind Madurai;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin: 0px;
 }
 
-.contact p{
+.contact p {
     color: var(--primary-navy-dark, #072048);
     font-family: Hind Madurai;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 0px;
 }
 
-.contact a{
+.contact a {
     color: var(--primary-navy-dark, #072048);
     font-family: Hind Madurai;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin: 0px;
+
 }
 
+.contact .line1 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
+.contact .line2 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
 /*-------------------------------- footer -------------------------------------------*/
 
@@ -582,7 +610,7 @@ footer .footer-col ul li a {
 }
 
 footer .footer-col ul li a:hover {
-    color: #000000;
+    color: #979797;
     padding-left: 8px;
 }
 
@@ -615,4 +643,19 @@ footer .footer-col1 .social-links a:hover {
     footer .footer-col {
         width: 100%;
     }
+}
+
+
+
+.copyrights p {
+    margin-top: 1%;
+    padding-bottom: 2%;
+    color: #FFF;
+    font-family: Hind Madurai;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
 }
