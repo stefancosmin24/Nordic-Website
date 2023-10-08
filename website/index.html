@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/8a6abf00c3.js" crossorigin="anonymous"></script>
-    <script src="src/main.js"></script>
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,34 @@
 </head>
 
 <body>
+ 
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div>
+    <span class="close">&times;</span>
+    <p>LOGIN</p></div>
+
+    <div class="bl_sq"><a>You do not have an account? Create it here!</a></div>
+<div>
+    <form method="post" action="somewhere" onsubmit="return submitForm(this);">
+        <div class="u_input">
+       <div> <input   name="user" required></div>
+        <div><input type="password" id="password" name="pwd" required></div></div>
+        <input type="submit" value="post request"/>
+    </form>
+</div>
+
+
+  </div>
+
+</div>
+
+    <!-- Header -->
     <div class="container">
         <div class="util">
             <div class="logo">
@@ -37,13 +65,12 @@
                 </div>
 
                 <div class="icons">
-
-                    <div><a href="#"><img src="public/Vector.png"></a></div>
-                    <div><a href="#"><img href="#" src="public/Vector (1).png"></a></div>
-                    <div><a href="#"><img href="#" src="public/Vector (2).png"></a></div>
-                    <div><a href="#"><img href="#" src="public/Vector (3).png"></a></div>
-                    <div><a href="#"><img href="#" src="public/Vector (4).png"></a></div>
-                    <div><a href="#"><img href="#" src="public/Vector (5).png"></a></div>
+                    <div><input type="image" src="public/Vector.png" /></div>
+                    <div><input type="image" src="public/Vector (1).png" /></div>
+                    <div><input id="myBtn" type="image" src="public/Vector (2).png" /></div>
+                    <div><input type="image" src="public/Vector (3).png" /></div>
+                    <div><input type="image" src="public/Vector (4).png" /></div>
+                    <div><input type="image" src="public/Vector (5).png" /></div>
                 </div>
             </nav>
 
@@ -151,9 +178,9 @@
                 non lectus.</p>
         </div>
 
-
-        <div class="blue_rectangle">
-
+        
+        <div class="blue_rectangle1">
+            
             <div>
                 <a>Maecenas</a>
                 <p>Nunc porta iaculis elementum. Duis vel orci quis mauris eleifend varius. Nullam vel neque id ante
@@ -175,7 +202,7 @@
                     sapien. </p>
             </div>
 
-
+        
 
         </div>
 
@@ -374,4 +401,5 @@
 
 </body>
 
+<script src="src\main.js"></script>
 </html>
